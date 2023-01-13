@@ -1,0 +1,17 @@
+here is a step-by-step guide for combining the two codes to create an AI-based matching engine for an order book in C++:
+
+Start by creating a new C++ file and adding the necessary includes for the AI component of the matching engine, such as the libraries for the neural network and the training data.
+
+Next, define a MatchingEngine class that will contain the logic for the matching engine. The MatchingEngine class should have a constructor that initializes the neural network and trains it using the training data.
+
+Inside the MatchingEngine class, define a method called AddOrder that takes an Order struct as an argument and adds it to the order book.
+
+Define a method called MatchOrders that uses the neural network to predict the best matches for each order in the order book. The method should iterate through the predicted matches and execute the trades by updating the sizes of the orders and removing fully filled orders from the order book.
+
+Define a method called PrintTrades that prints out a list of all the trades that have been executed by the matching engine.
+
+In the main function of the program, create an instance of the MatchingEngine class and add some orders to the order book using the AddOrder method.
+
+Call the MatchOrders method to have the neural network predict and execute the best matches for the orders in the order book.
+
+Call the PrintTrades method to print out a list of all the trades that have been executed by the matching engine.
